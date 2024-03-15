@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="app-container">
+
+
+        <div class="header">
+            <h2>ToDo App</h2>
+            <!-- <h4>Technology used: HTML, CSS, JS</h4> -->
+        </div>
+
+        <div class="input">
+            <input type="text" name="todoInput" id="todoInput" placeholder="Enter Task">
+            <button type="submit" onclick="addTask()">Add</button>
+        </div>
+
+        <div class="list">
+            <p>Task List</p>
+            <ul id="todoList">
+            </ul>
+        </div>
+        <div class="search">
+            <!-- <label for="searchInput">Search:</label> -->
+            <input type="text" id="searchInput" placeholder="Search" oninput="filterTasks()">
+        </div>
+
+        <div class="counter">
+            <p>Total Tasks: <span id="totalTasksCount">0</span></p>
+            <p>Completed Tasks: <span id="completedTasksCount">0</span></p>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
